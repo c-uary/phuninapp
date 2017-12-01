@@ -11,6 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'PageController@index');
+Route::resource('posts', 'PostsController');
+Auth::routes();
+
+Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
