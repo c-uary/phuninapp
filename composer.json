@@ -37,6 +37,10 @@
         }
     },
     "scripts": {
+        "post-install-cmd": [
+            "chmod -R 755 bootstrap\/cache",
+            "php artisan cache:clear"
+        ],
         "post-root-package-install": [
             "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
         ],
@@ -53,4 +57,5 @@
         "sort-packages": true,
         "optimize-autoloader": true
     }
+    
 }
