@@ -11,5 +11,5 @@ skip_files:
 env_variables:
   # Put production environment variables here.
   APP_LOG: errorlog
-  APP_KEY: base64:2zzEDXRaAGVrwm2JT/R0WKmDauwFzeh4DhLeJ6QMO/w=
+  APP_KEY: base64:+Mgf65vE57ruuYvBVJ98hHd5s8hAzSmihAJGcUTeYQw=
   STORAGE_DIR: /tmp
